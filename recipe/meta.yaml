@@ -1,5 +1,5 @@
 {% set name = "SLiM" %}
-{% set version = "3.4" %}
+{% set version = "3.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/MesserLab/SLiM/archive/v{{ version }}.tar.gz
-  sha256: b25a39109e7dbacb847ce4241a59788db645d199eacb607d002295d0a369d798
+  sha256: 7f6f9b33416d0f5a6ab4e004f8f2cb5251b57ae270da7f4b3054b2135765a376
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -29,7 +29,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'Forward-time population genetics simulator'
+  summary: Forward-time population genetics simulator
 
   description: |
     SLiM is an evolutionary simulation framework that combines a powerful engine
