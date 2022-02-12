@@ -1,5 +1,5 @@
 {% set name = "SLiM" %}
-{% set version = "3.7" %}
+{% set version = "3.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/MesserLab/SLiM/archive/v{{ version }}.tar.gz
-  sha256: 2fae88f22a467e1fd3b7bc1d7965e844ed7ad9fea9b677e12148a99be8f63268
+  sha256: cfecf554e7147254046de3dcdd4fc66801a109254f29bba539d6f43c8233bb78
   patches:
     - windows_printf_exponent_digits.patch  # [win]
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
