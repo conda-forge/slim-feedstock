@@ -8,11 +8,9 @@ package:
 source:
   url: https://github.com/MesserLab/SLiM/archive/v{{ version }}.tar.gz
   sha256: cfecf554e7147254046de3dcdd4fc66801a109254f29bba539d6f43c8233bb78
-  patches:
-    - windows_printf_exponent_digits.patch  # [win]
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
