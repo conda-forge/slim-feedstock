@@ -21,6 +21,8 @@ requirements:
     - {{ compiler('cxx') }}  # [not win]
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ compiler('m2w64_cxx') }}  # [win]
+    # Uses stdlibc; see https://conda-forge.org/news/2024/03/24/stdlib-migration/
+    - {{ stdlib("c") }}
     # Full posix environment.
     - m2-base  # [win]
 
