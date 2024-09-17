@@ -1,5 +1,5 @@
 {% set name = "SLiM" %}
-{% set version = "4.2.2" %}
+{% set version = "4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/MesserLab/SLiM/archive/v{{ version }}.tar.gz
-  sha256: bb63b73e878fb6c15a49f33c3bf1a67047ebb6a11e3d17f930780461dd450400
+  sha256: b390a6638a915d6f955608610bca6e94fc0f4d62f5ad07376b2aa98756e8c81d
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
