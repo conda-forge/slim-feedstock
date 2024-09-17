@@ -13,6 +13,8 @@ set "RANLIB=%HOST%-gcc-ranlib.exe"
 
 cmake -G "MSYS Makefiles" ^
       %CMAKE_ARGS% ^
+      -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
+      -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^
       -DCMAKE_BUILD_TYPE:STRING=Release ^
       -DCMAKE_CXX_STANDARD_LIBRARIES:STRING="-lpsapi" ^
       ..
