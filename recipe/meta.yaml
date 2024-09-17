@@ -10,7 +10,7 @@ source:
   sha256: bb63b73e878fb6c15a49f33c3bf1a67047ebb6a11e3d17f930780461dd450400
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -18,8 +18,10 @@ requirements:
     - m2-make  # [win]
     - cmake
     - {{ compiler('c') }}  # [not win]
+    - {{ stdlib("c") }}    # [not win]
     - {{ compiler('cxx') }}  # [not win]
     - {{ compiler('m2w64_c') }}  # [win]
+    - {{ stdlib("m2w64_c") }}    # [win]
     - {{ compiler('m2w64_cxx') }}  # [win]
     # Full posix environment.
     - m2-base  # [win]
